@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sessão</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/form.js"></script>
+  <link rel="icon" type="image/png" href="https://app.caxten.com/shared/images/favicon.ico"/>
 
 <link rel="stylesheet" href="tailwindcss/flowbite.min.css" />
-<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/boot.css" />
+
 
 </head>
 <body>
   <div class="flex ">
-    <div class="esquerdo bg-white h-screen mb-16 " id="minhaDiv">
+    <div class="left-content bg-white h-screen 	 " id="minhaDiv">
         <div>
-            <nav class="bg-white border-gray-200  p-3" >
+            <nav class="bg-white border-gray-200  sm:p-5" >
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="index.html" class="flex items-center">
                         <img src="img/logo.png" class="w-10  mr-3" alt="Flowbite Logo" />
@@ -25,26 +29,26 @@
                     </button>
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
-                        <li><a href="#" class="color2 text-sm hover:underline">Precisa de ajuda?</a></li>
+                        <li><a href="#" class="help-link  hover:underline">Precisa de ajuda?</a></li>
                     </ul>
                     </div>
                 </div>
             </nav>
         </div>
 
-        <div class="container mt-10 mx-auto md:w-4/5 md:px-0 sm:px-10 px-3 max-w-lg ">
+        <div class="container  mt-10 mx-auto md:w-4/5 md:px-0 sm:px-10 px-3 max-w-lg ">
             <h1 class="text-2xl font-bold text-gray-900">Login</h1>
                 <p class=" mt-3 mb-12">Acede a sua conta Caxten para aceder a sua loja e começar a facturar.</p>
                 <form>
                     <div class="mb-6">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Faça a autenticação com o seu endereço de e-mail <span class="text-red-800">*</span></label>
-                    <input type="email" id="email"  class="bg-white border border-1 border-blue-300 text-gray-900 text-sm rounded-sm focus:ring-blue-100 focus:border-blue-300 focus:drop-shadow-[0_2px_5px_rgba(0,0,0,0.15)]  block w-full p-3.5" placeholder="name@hotmail.com" required>
-                    </div>
+                    <label for="email" class="block text-gray-700 font-semibold mb-2 text-xs cursor-pointer ">Faça a autenticação com o seu endereço de e-mail<span class="text-red-500 mt-7">*</span></label>
+                    <input type="email" id="email" class="input-field" placeholder="name@hotmail.com" required>
+                </div>
                     <div class="mb-6">
-                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Palavra-Passe<span class="text-red-800">*</span></label>
+                    <label for="password" class="block text-gray-700 font-semibold mb-2 text-xs cursor-pointer">Palavra-passe<span class="text-red-600 mt-7">*</span></label>
                    
                     <div class="relative">
-                    <input type="password" id="password-input" autocomplete="off" class="bg-white border border-blue-300 text-gray-900 text-sm rounded-sm focus:ring-blue-100 focus:border-blue-300 focus:drop-shadow-[0_2px_5px_rgba(0,0,0,0.15)]   block w-full p-3.5" placeholder="Digite sua Palavra-Passe" required>
+                        <input type="password" id="password-input" autocomplete="off" class="input-field" placeholder="Digite a sua palavra-passe" required>
                     <button type="button" id="toggle-button" class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-600 hover:text-blue-500 focus:outline-none" onclick="togglePasswordVisibility()">
                             <img id="eye-open-icon" class="h-5 w-5 hidden" src="https://app.caxten.com/shared/images/eye-outline.svg" >
                             <img id="eye-closed-icon" class="h-5 w-5" src="https://app.caxten.com/shared/images/eye-off-outline.svg">
@@ -53,36 +57,35 @@
                     </div>
                     <div class="flex items-start mb-4">
                     </div>
-                    <button  type="submit"  class="hover:animate-pulse color mb-7 font-medium rounded-sm text-sm w-full p-3.5 ">Iniciar Sessão</button>
+                    <button  type="submit"  class="my-button">Iniciar a Sessão</button>
                 </form>
 
                  <div class="flex flex-wrap items-center justify-between">
-    <a href="gratis.html" class="text-gray-800 text-sm underline hover:text-blue-600">Ainda não tem uma conta? Teste grátis por 7 dias</a>
-    <a href="recuperar.html" class="text-gray-500 text-sm hover:text-blue-600">Esqueceu-se da senha?</a>
-  </div>
+                    <a href="gratis.html" class="text-gray-950 text-xs font-semibold underline hover:no-underline hover:text-blue-600">Ainda não tem uma conta? Teste grátis por 7 dias</a>
+                    <a href="recuperar.html" class="text-gray-700 text-xs  hover:underline hover:text-blue-600">Esqueceu-se da senha?</a>
+                </div>
             </div>
+            <br>
     </div>
+            <div class="right-content  pb-10 auth-right hidden sm:block colorTema flex-grow flex items-center justify-center text-center flex-col">
 
-        <div class="colorTema direito colorTema hidden sm:block fixed right-0 top-0 h-screen  rolar">
-        
-        <div class=" flex lg:mt-32 justify-center  ">
-            <div class="text-center text-white p-0 pt-5 mt-0 lg:p-5 ">
-                <h1 class="mb-3.5 leading-7 font-bold text-2xl ">Optimize a sua experiência de cliente com a nossa base de conhecimento</h1>
-                <div class="text-direito mb-3 px-3">
-                    <p>Torne os seus clientes mais autónomos com uma base de conhecimento. Esqueça as respostas repetitivas, conteúdos de ajuda escondidos ou não indexáveis, respostas lentas ou clientes não autónomos.</p>
+                <div class="">
+                    <div class="text-white p-0 pt-5 mt-10 lg:p-5 ">
+                        <h1 class="mb-3.5 leading-7 font-bold text-2xl ">Optimize a sua experiência de cliente com a nossa base de conhecimento</h1>
+                        <div class="text-direito mb-3 px-5">
+                            <p>Torne os seus clientes mais autónomos com uma base de conhecimento. Esqueça as respostas repetitivas, conteúdos de ajuda escondidos ou não indexáveis, respostas lentas ou clientes não autónomos.</p>
+                        </div>
+                        <div class="w-24 m-auto">
+                            <span><a href="#" class=" underline font-bold m-auto float text-sm hover:no-underline">Saiba Mais<img  src="img/arrow-right.png"  class="float-right w-5 pt-1" alt=""></a></span>
+                        </div>
+                        <img class="mt-5 m-auto w-96" src="img/pub.jpg" alt="">
+                    </div>
                 </div>
-                <div class="w-24 m-auto">
-                    <span><a href="#" class=" underline font-bold m-auto float text-sm">Saiba Mais<img  src="img/arrow-right.png"  class="float-right w-5 pt-1" alt=""></a></span>
-                </div>
-                <img class="mt-5 m-auto w-96" src="img/pub.jpg" alt="">
             </div>
-        </div>
-    </div>
   </div>
 
   
   <script src="tailwindcss/flowbite.bundle.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   
 </body>
 </html>

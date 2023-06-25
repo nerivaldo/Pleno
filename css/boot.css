@@ -1,0 +1,23 @@
+  /* ++++++++++ SCROL ++++++++++++++ */
+  
+  /* Estilizando a barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+    overflow-y: hidden;
+  }
+  
+  /* Estilizando o fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilizando o "polegar" da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #397fc9;
+  }
+  
+  /* Estilizando o "polegar" da barra de rolagem quando estiver sendo arrastado */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
